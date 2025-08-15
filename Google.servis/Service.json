@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:185184976746":android:9b9ba2ce17104d0c,
+        "mobilesdk_app_id": "1:185184976746"
         "android_client_info": {
           "package_name": "chrisshop.com",
         }
@@ -15,7 +15,7 @@
       "oauth_client": [
         {
           "client_type": 1,
-          "client_id": "185184976746":android:9b9ba2ce17104d0c,
+          "client_id": "185184976746":
           "android_info": {
             "package_name": "chrisshop.com",
           }
