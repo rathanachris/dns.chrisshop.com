@@ -33,6 +33,6 @@ http.createServer((req, res) => {
     }
   });
 }).listen(PORT, () => {
-  console.log("chrisshop.fd.com server is starting...");
+  console.log("chrisshop.com server is starting...");
   console.log(` Server started at http://localhost:${PORT}`);
 });
