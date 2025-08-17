@@ -45,4 +45,4 @@ gcloud run services update chrisshop.com38167\
   gcloud logs read --project=chrisshop.com38167
   🌍 Website URL: https://chrisshop.com38167-web-xxxxx.a.run.app
 🔑 Your API Token: YourSecretTokenHere
-🔗 Token-protected Endpoint: https://chrisshop.com38167-xxxxx.a.run.app/api/token
+🔗 Token-protected Endpoint: https://chrisshop.com/.a.run.app/api/token
