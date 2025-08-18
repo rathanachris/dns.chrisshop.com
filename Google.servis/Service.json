@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:185184976746"
         "android_client_info": {
-          "package_name": "manifestchris.shop.com",
+          "package_name": "chrisrathana.shop.com",
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_type": 1,
           "client_id": "185184976746":
           "android_info": {
-            "package_name": "manifestchris.shop.com",
+            "package_name": "chrisrathana.shop.com",
           }
         }
       ],
