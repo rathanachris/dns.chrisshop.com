@@ -1,10 +1,10 @@
-# chrisshop.com38167
- #!/bin/bash
+# dns.chrisshop.com
+#!/bin/bash
 # deploy_web_Token.sh
 # Script to deploy website with API Token to Google Cloud Run
 
-PROJECT_ID="chrisshop.com38167"
-SERVICE_NAME="chrisshop.com38167"
+PROJECT_ID="dns.chrisshop.com"
+SERVICE_NAME="dns.chrisshop.com"
 REGION="asia-southeast1"
 API_TOKEN_VALUE="YourSecretTokenHere"
 
@@ -38,11 +38,13 @@ SERVICE_URL=$(gcloud run services describe $SERVICE_NAME --region $REGION --form
 echo "✅ Deployment complete!"
 echo "🌍 Website: $SERVICE_URL"
 echo "🔑 Token Endpoint: $SERVICE_URL/api/token"
-gcloud run services update chrisshop.com38167\
+gcloud run services update dns
+chrisshop.com\
   --region asia-southeast1 \
   --set-env-vars MY_API_TOKEN="YourSecretTokenHere"
   
-  gcloud logs read --project=chrisshop.com38167
-  🌍 Website URL: https://chrisshop.com38167-web-xxxxx.a.run.app
+  gcloud logs read --project=dns
+  chrisshop.com
+  🌍 Website URL: https://dns.chrisshop.com-web-xxxxx.a.run
 🔑 Your API Token: YourSecretTokenHere
-🔗 Token-protected Endpoint: https://chrisshop.com/.a.run.app/api/token
+🔗 Token-protected Endpoint: https://dns.chrisshop.com/.a.run.app/api/token
