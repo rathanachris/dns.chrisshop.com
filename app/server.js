@@ -10,7 +10,7 @@ const PORT = 8080;
 http.createServer((req, res) => {
   let filePath = '.' + req.url;
   if (filePath == './') {
-    filePath = './index.html'; // default file
+    filePath = '.http://localhost:8080/index.html'; // default file
   }
 
   const extname = String(path.extname(filePath)).toLowerCase();
@@ -33,6 +33,6 @@ http.createServer((req, res) => {
     }
   });
 }).listen(PORT, () => {
-  console.log("chrisshop.com server is starting...");
+  console.log("dns.chrisshop.com server is starting...");
   console.log(` Server started at http://localhost:${PORT}`);
 });
