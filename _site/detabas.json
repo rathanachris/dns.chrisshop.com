@@ -1,0 +1,10 @@
+{
+ "users": [
+     { "id": 1, "name": "chris rathana", "email": "chris@example.com" },
+     { "id": 2, "name": "Rathana", "email": "rathana@example.com" }
+    ],
+    "products": [
+      { "id": 1, "title": "Laptop", "price": 300 },
+      { "id": 2, "title": "Phone", "price": 200 }
+    ]
+ }

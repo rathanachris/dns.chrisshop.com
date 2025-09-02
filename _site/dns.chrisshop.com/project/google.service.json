@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "dns.chrishop.com",
+    "project_id": "185184976746",
+    "storage_bucket": "dms.chrisshop.appspot.com",
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185184976746"
+        "android_client_info": {
+          "package_name": "dns.chrisshop.com",
+        }
+      },
+      "oauth_client": [
+        {
+          "client_type": 1,
+          "client_id": "185184976746":
+          "android_info": {
+            "package_name": "dns.chrisshop.com",
+          }
+        }
+      ],
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ3_6wCQXpes9TpOuR-TqwjPZKJ5a_xKA",
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "185184976746",
+                "app_store_id": "dns.chrisshop.com",
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
