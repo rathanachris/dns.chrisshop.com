@@ -1,3 +1,0 @@
-[submodule "dns.chrisshop.com"]
-    path = dns.chrisshop.com
-    url = git@github.com:rathanachris/dns.chrisshop.com.git
