@@ -137,7 +137,15 @@ required ></textarea>
 </footer>
 </body>
 <script>
-
+const { DefaultDeserializer } = require("v8");
+function stringToBytes (str) {
+return new
+TextEncoder().encode(str);
+  }
+const name = "chris rathana";
+const bytes =
+stringToBytes(name);
+console.log(bytes); {
 </script>
 </body>
 </div></div></div></div></div></div></head></div></div></div></div></div></body>
