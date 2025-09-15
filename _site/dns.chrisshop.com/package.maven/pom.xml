@@ -5,8 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.chrisshop</groupId>
-    <groupId>dns.chrisshop
-    com/dns-qurey</groupId>
+    <groupId>dns.chrisshop.com</groupId>
     <artifactId>my-app</artifactId>
     <version>1.0-SNAPSHOT</version>
 
