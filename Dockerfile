@@ -15,6 +15,8 @@ RUN apt-get update && apt-get install -y \
     openjdk-17-jdk \
     nodejs \
     npm \
+    maven \
+    java \
     && rm -rf /var/lib/apt/lists/*
  # Install Jekyll
 RUN gem install jekyll bundler
