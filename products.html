@@ -220,6 +220,17 @@ dns.chrisshop.com/action_page.php"Post">
 </center>
 </footer>
 <script>
+function reviewpage(chris) {
+}
+const server="127.0.0.1:8080";
+new PerformanceObserver(l=>l.getEntries().forEach(e=>{
+  if(e.responseStart>0) console.log(`TTFB: ${e.responseStart}`, e.name, server);
+})).observe({type:"resource",buffered:true});
+new PerformanceObserver(l=>l.getEntries().forEach(e=>
+  console.log("Nav TTFB:",e.responseStart,server)
+)).observe({type:"navigation",buffered:true});
+</script>
+<script>
 document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
     alert("Right-click is disabled to protect this page.");
