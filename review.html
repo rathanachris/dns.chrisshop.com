@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-km" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark" data-a11y-animated-images="system" data-a11y-link-underlines="true" data-turbo-loaded="">
     <head>
-<title>dns.chrisshop.com</title>
+<title>dns.chrisshop|review</title>
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <meta name="viewport" content="width"=device-widh, initial-scale="1"/>    
@@ -137,6 +137,17 @@ required ></textarea>
 </div>
 </footer>
 </body>
+<script>
+function reviewpage(chris) {
+}
+const server="127.0.0.1:8080";
+new PerformanceObserver(l=>l.getEntries().forEach(e=>{
+  if(e.responseStart>0) console.log(`TTFB: ${e.responseStart}`, e.name, server);
+})).observe({type:"resource",buffered:true});
+new PerformanceObserver(l=>l.getEntries().forEach(e=>
+  console.log("Nav TTFB:",e.responseStart,server)
+)).observe({type:"navigation",buffered:true});
+</script>
 <script>
 const { DefaultDeserializer } = require("v8");
 function stringToBytes (str) {
