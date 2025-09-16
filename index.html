@@ -15,7 +15,7 @@ dns.chrisshop.com/style.css">
 &token_usage="Api">
  <link rel="dns-prefetch" href="http://www.dns.chrisshop.com/style.css">
   <!-- Developer Page me -->
- <link rel="dns-prefetch" href="http://www.dns.yle.css">
+ <link rel="dns-prefetch" href="http://www.dns.chrisshop.com/style.css">
  <link rel="dns-prefetch" href="https://ajax.googleapis.com">
  <link rel="dns-prefetch" href="https://maps.googleapis.com">      
  <link rel="icon" href="image/fd.chrisrathana.jpeg">   
@@ -209,6 +209,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a href="https s://tiktok.com/@phon.rathana"><i class="fab fa-tiktok"></i></a>
 </center>
 </footer>
+<script>
+function reviewpage(crhrishop) {
+}
+const server="127.0.0.1:8080";
+new PerformanceObserver(l=>l.getEntries().forEach(e=>{
+  if(e.responseStart>0) console.log(`TTFB: ${e.responseStart}`, e.name, server);
+})).observe({type:"resource",buffered:true});
+new PerformanceObserver(l=>l.getEntries().forEach(e=>
+  console.log("Nav TTFB:",e.responseStart,server)
+)).observe({type:"navigation",buffered:true});
+ </script>
 <script type="text/JavaScript">
 // server.mjs
 import { createServer } from 'node:http';
