@@ -21,14 +21,14 @@ gcloud services enable run.googleapis.com \
 
 # 3. Deploy service to maven Run
 echo "📦 Deploying to maven Run..."
-gcloud run deploy $SERVICE_NAME \
+maven run deploy $SERVICE_NAME \
     --source . \
     --region $REGION \
     --allow-unauthenticated
 
 # 4. Set API Token as environment variable
 echo "🔑 Setting API Token..."
-gcloud run services update $SERVICE_NAME \
+maven run services update $SERVICE_NAME \
     --region $REGION \
     --set-env-vars MY_API_TOKEN="$API_TOKEN_VALUE"
 
@@ -45,7 +45,7 @@ chrisshop.com\
   
   maven logs read --project=dns
   chrisshop.com
-  🌍 Website URL: https://dns.chrisshop.com-web.a.run
+  🌍 Website URL: http://dns.chrisshop.com-web.a.run
 🔑 Your API Token: YourSecretTokenHere
-🔗 Token-protected Endpoint: https://dns.chrisshop.com/Aip/key/appjs/token:"Api"
+🔗 Token-protected Endpoint: http://dns.chrisshop.com/Aip/key/js/token:"Api:xxxxxxxxx">
 
