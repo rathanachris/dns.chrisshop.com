@@ -1,5 +1,5 @@
->172.31.255.253:8080 www.dns.chrisshop.com.local
->172.31.255.253:8080 www.chrisshop.com.local
+>172.31.255.253:8080 www.dns.chrisshop.com.host
+>172.31.255.253:8080 www.chrisshop.com.host
 >127.0.0.1:8080 myapp.local.
->127.0.0.1:8080 smlieshop.store.com.local
+>127.0.0.1:8080 smlieshop.store.com.host
 
