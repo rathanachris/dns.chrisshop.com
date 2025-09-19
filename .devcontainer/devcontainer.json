@@ -23,6 +23,6 @@
     },
 
     "containerEnv": {
-        "HOSTNAME": "dns.chrisshop.host"
+        "HOSTNAME": "www.dns.chrisshop.host"
     }
 }
