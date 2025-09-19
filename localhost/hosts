@@ -1,0 +1,5 @@
+>ip 172.31.255.253:8080 dns.chrisshop.com host(www) public ip
+>ip 172.31.255.253:8080 chrisshop.com host(www) public ip
+>ip 127.0.0.1:8080 myapp local
+>ip 172.31.255.253:8080 smlieshop.store.com host public ip
+
