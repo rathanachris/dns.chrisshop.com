@@ -1,0 +1,28 @@
+{
+    "name": "Java Dev Container",
+    "dockerFile": "Dockerfile",
+    "context": ".",
+    "runArgs": ["--network=host"],
+
+    "features": {},
+    
+    "forwardPorts": [8080],
+
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "java.home": "/usr/lib/jvm/java-21-openjdk-amd64"
+            },
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vscjava.vscode-maven",
+                "pivotal.vscode-spring-boot"
+            ]
+        }
+    },
+
+    "containerEnv": {
+        "HOSTNAME": "dns.chrisshop.host"
+    }
+}
