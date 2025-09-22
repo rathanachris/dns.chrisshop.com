@@ -1,5 +1,5 @@
->ip 192.168.100 DNS1 8.8.8.8 DNS2 8.4.8.4 www.dns.chrisshop.com DNS1 8.8.8.8 DNS2 8.4.8.4 local public ip
->ip 192.168.100 DNS1 8.8.8.8 DNS2 8.4.8.4 www.chrisshop.com local public ip
->ip 127.0.0.1:8080 myapp local
->ip 192.168.100.8080 www.smlieshop.store.com local public ip
+>address.ip 192.168.100:30 www.dns.chrisshop.com local public ip
+>address.ip 192.168.100:30 www.chrisshop.com local public ip
+>address.ip 192.168.100:30 my.app local
+>address.ip 192.168.100:30 www.smlieshop.store.com local public ip
 
