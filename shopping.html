@@ -154,10 +154,10 @@ opacity: 1;transform: translateX(-50%) translateY(0);
     } catch (_) {}
   }
 
-  // OPTIONAL: Telegram webhook (បំពេញ TOKEN/CHAT_ID បើចង់ប្រើ)
+  // OPTIONAL: Telegram webhook (TOKEN/CHAT_ID )
   async function notifyTelegram(text) {
-    const BOT_TOKEN = "";      // ← ដាក់ Bot Token
-    const CHAT_ID  = "";       // ← ដាក់ Chat ID
+    const BOT_TOKEN = "Iv23li28S2uhdQECZy5r";      // ← ដាក់ Bot Token
+    const CHAT_ID  = "1235407";       // ← ដាក់ Chat ID
     if (!BOT_TOKEN || !CHAT_ID) return; // មិនដាក់គេនឹងមិនផ្ញើ
 
     const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
