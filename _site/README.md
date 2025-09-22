@@ -47,4 +47,4 @@ chrisshop.com\
   chrisshop.com
   🌍 Website URL: https://dns.chrisshop.com-web-xxxxx.a.run
 🔑 Your API Token: YourSecretTokenHere
-🔗 Token-protected Endpoint: https://dns.chrisshop.com/.a.run.app/api/token
+🔗 Token-protected Endpoint: https://dns.chrisshop.com/app/js/node/api/token="">
