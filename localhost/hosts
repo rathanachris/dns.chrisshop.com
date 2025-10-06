@@ -1,5 +1,5 @@
->address.ip 192.168.100:30 www.dns.chrisshop.com local public ip
->address.ip 192.168.100:30 www.chrisshop.com local public ip
->address.ip 192.168.100:30 my.app local
->address.ip 192.168.100:30 www.smlieshop.store.com local public ip
+>rotre.ip 192.168.1.1 www.dns.chrisshop.com local public ip
+>address.ip 192.168.100 www.chrisshop.com local public ip
+>address.ip 192.168.1.1 my.app local
+>address.ip 192.168.2.1 www.chrisrathana.mastre.com local public ip
 
