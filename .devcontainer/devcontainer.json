@@ -6,7 +6,7 @@
 
     "features": {},
     
-    "forwardPorts": [8080],
+    "forwardPorts": [443],
 
     "customizations": {
         "vscode": {
@@ -23,6 +23,6 @@
     },
 
     "containerEnv": {
-        "HOSTNAME": "www.dns.chrisshop.host"
+        "domain": "www.dns.chrisshop.com"
     }
 }
