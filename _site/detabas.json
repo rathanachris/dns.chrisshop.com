@@ -1,7 +1,7 @@
 {
  "users": [
-     { "id": 1, "name": "chris rathana", "email": "chris@example.com" },
-     { "id": 2, "name": "Rathana", "email": "rathana@example.com" }
+     { "id": 1, "name": "chris rathana", "email": "chris@chrisshop.com" },
+     { "id": 2, "name": "Rathana", "email": "rathanachris035@gmil.com" }
     ],
     "products": [
       { "id": 1, "title": "Laptop", "price": 300 },
