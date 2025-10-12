@@ -26,6 +26,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        env: '18'
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - run: npm install
+    - run: npm run build # ឬ script ផ្សេងៗ
+    
+  
+    
