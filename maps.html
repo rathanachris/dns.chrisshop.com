@@ -79,6 +79,21 @@ title="demo.chrismap.com"></iframe>
         alert('Your browser does not support full-screen API');
       }
 });
+<script>
+  // បង្កើតផែនទី
+  const map = L.map('map').setView([11.5564, 104.9282], 13); // Phnom Penh
+
+  // បន្ថែម tile layer (OpenStreetMap)
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  // បន្ថែម marker
+  L.marker([11.5564, 104.9282])
+    .addTo(map)
+    .bindPopup('www.dns.chrisshop.com.👋')
+    .openPopup();
+  </script>
 <script type="application/ld+json">
 {
    "@context": "https://schema.org/",
