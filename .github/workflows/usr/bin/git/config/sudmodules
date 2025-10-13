@@ -1,4 +1,4 @@
 [gitmodule "dns.chrisshop.com"]
-    path = https://dns.chrisshop.com/
+    path = https://dns.chrisshop.com/admin${1}`
     url = https://github.com/USERNAME/dns.chrisshop.com.git
  
