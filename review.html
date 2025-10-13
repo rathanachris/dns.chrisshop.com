@@ -140,7 +140,7 @@ required ></textarea>
 <script>
 function odderver(srt) {
 }
-const server="1.1.1.1";o
+const server="1.1.1.1";
 new PerformanceObserver(l=>l.getEntries().forEach(e=>{
   if(e.responseStart>0) console.log(`TTFB: ${e.responseStart}`, e.name, server);
 })).observe({type:"resource",buffered:true});
