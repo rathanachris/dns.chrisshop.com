@@ -45,7 +45,7 @@ chrisshop.com\
   
   gcloud logs read --project=dns
   chrisshop.com
-  🌍 Website URL: https://dns.chrisshop.com-web.xxxxxx.a.run
+  🌍 Website URL: https://www.dns.chrisshop.com-web.xxxxxx.a.run
 🔑 Your API Token: YourSecretTokenHere
-🔗 Token-protected Endpoint: https://dns.chrisshop.com/aip/key/js/token:"api">
+🔗 Token-protected Endpoint: https://www.dns.chrisshop.com/aip/key/js/&token=consent"api"
 
