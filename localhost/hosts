@@ -1,5 +1,5 @@
 >router 192.168.2.1 hosts DNS[0.0.0.0];80 ns1www.dns.chrisshop.com/admin{1} in local (public ip)
->address.ip 192.168.100.30:443 ns2www.chrisshop.com local ( DNS public ip Https)
+>address.ip 192.168.100.30 ns2www.chrisshop.com local ( DNS public ip Https)
 >router 192.168.2.1 my.app local (public ip DNS HTTPS)
->address.ip 192.168.100.30:443 nswww.chrisrathana.mastre.com local DNS[0.0.0.0];80 (public ip DNS HTTPS)
+>address.ip 192.168.100.30. post 443 nswww.chrisrathana.mastre.com local DNS[0.0.0.0];80 (public ip DNS HTTPS)
 
