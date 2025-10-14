@@ -41,7 +41,7 @@ header h1 { font-size: 1rem; }
     <div class="map-card">
       <div class="map-wrap">
         <!-- ខ្ញុំបានដកចន្លោះបាត់ "e hbc" → "ehbc" ក្នុង src ដើម្បីធានាថា URL មានទ្រង់ទ្រាយត្រឹមត្រូវ -->
- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1S2HGaM56UiWQVAoaLWpAPv7Rd2AYMBs&ehbc=2E312F"
+ <iframe src="https://www.google.com/d/u/0/embed?mid=1S2HGaM56UiWQVAoaLWpAPv7Rd2AYMBs&ehbc=2E312F"
 allowfullscreen
 loading="lazy"   referrerpolicy="no-referrer-when-downgrade"
 title="demo.chrismap.com"></iframe>
@@ -77,11 +77,11 @@ title="demo.chrismap.com"></iframe>
         el.webkitRequestFullscreen();
       } else {
         alert('Your browser does not support full-screen API');
-   }
-});
 console.log(process.env.google_API_KEY);
 console.log(process.env.culd_URI);
 console.log(process.env.STRIPE_SECRET_KEY);
+   }
+});
 <script>
   // បង្កើតផែនទី
   const map = L.map('map').setView([11.5564, 104.9282], 13); // Phnom Penh
