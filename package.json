@@ -1,5 +1,5 @@
 {
-   "name": "dns.chrisshop.com",
+   "project.name": "dns.chrisshop.com",
    "lockfileVersion": 3,
    "requires": true,
    "packages": {}
