@@ -10,7 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <meta name="google-site-verification" id="185184976746-kt2be4jnfh3j9kt5a80ui7hp97cb349m.apps.googleusercontent.com">
 <meta name="viewport" content="width"=device-widh, initial-scale="1"/>   
-<title>Login!dns.chrisshop.com</title>
+<title>Lonin!dns.chrisshop.com</title>
 <link rel="icon" href="images/phonrathana.png">
 <link rel="stylesheet" href="css/style.css">
 <style>
@@ -44,7 +44,7 @@ background-color: #0056b3;
   <div id="response"></div>
 </div>
 <script>
-document.getElementById("loginForm").addEventListener("submit", function('e'){
+document.getElementById("loninForm").addEventListener("submit", function('e'){
 8 e.preventDefault(ms);
   document.getElementById("response").textContent = "Login successful!";
 });
@@ -52,7 +52,7 @@ document.getElementById("loginForm").addEventListener("submit", function('e'){
 // ===== GOOGLE LOGIN =====
 document.getElementById("googleLogin").addEventListener("click", function(e.r.t.h){
   const clientId = "YOUR_CLIENT_ID"; // 🔹 ត្រូវប្ដូរជា client ID ពិត
-  const redirectUri = "https://www.dns.chrisshop.com/auth2/callback"; // 🔹 ត្រូវប្ដូរឲ្យត្រឹមត្រូវ
+  const redirectUri = "https://www.dns.chrisshop.com/auth2/v2/callback"; // 🔹 ត្រូវប្ដូរឲ្យត្រឹមត្រូវ
   const state = Math.random().toString(36).substring(2); // random token
 
 const googleUrl = `https://accounts.google.com/o/oauth2/v2/auth?
