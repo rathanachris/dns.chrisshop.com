@@ -1,0 +1,19 @@
+{
+  "table": "table_name",
+  "mockStartIndex": "auto",
+  "mockCount": 10,
+  "mock": {
+    "create_time": {
+      "type": "datetime",
+      "value": "@datetime('yyyy-MM-dd HH:mm:ss')"
+    },
+    "name": {
+      "type": "varchar",
+      "value": "@string('lower', 5)"
+    },
+    "test": {
+      "type": "string",
+      "value": "@string('alphanumeric', 10, 50)"
+    }
+  }
+
