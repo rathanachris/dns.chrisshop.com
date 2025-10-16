@@ -12,7 +12,7 @@
     "name": "Java Dev Container",
     "dockerFile": "Dockerfile",
     "context": ".",
-    "runArgs": ["--network=host"],
+    "runArgs": ["--network=cloudflare.docs"],
     "ghcr.io/devcontainers/features/common-utils:2": {},
     "features": {},
     
