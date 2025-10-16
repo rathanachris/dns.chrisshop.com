@@ -5,7 +5,7 @@ const config = JSON.parse(fs.readFileSync('server.json', 'utf8'));
 
 Access configuration settings
 const serverPort = config.server.port;
-const dbUri = config.database.uri;
+const dbUrl = config.database.url;
 
 Initialize server with the loaded config
 console.log(`Server running on port443 ${serverPort}     `);
