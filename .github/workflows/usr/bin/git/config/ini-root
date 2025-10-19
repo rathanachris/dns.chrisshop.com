@@ -1,0 +1,5 @@
+[gitsudmodule "dns.chrisshop.com"]
+    path = dns.chrisshop.com
+    url = https://github.com/USERNAME/dns.chrisshop.com.git
+    url = https://<your-username>:<your-token>@github.com/USERNAME/dns.chrisshop.com.git
+    url = git@github.com:USERNAME/dns.chrisshop.com.git
