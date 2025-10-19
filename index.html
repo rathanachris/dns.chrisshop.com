@@ -216,10 +216,10 @@ URL(document).ready(function($){
 <script>
 function Odserver(srt) {
 }
-const server="1.1.1.1";
+const server="https://www.dns.chrisshop.com/key/consent/Api/?token=";
 new PerformanceObserver(l=>l.getEntries().forEach(e=>{
   if(e.responseStart>0) console.log(`TTFB: ${e.responseStart}`, e.name, server);
-})).observe({type:"resource",buffered:true});
+})).Observe({type:"resource",buffered:true});
 new PerformanceObserver(l=>l.getEntries().forEach(e=>
   console.log("Nav TTFB:",e.responseStart,server)
 )).observe({type:"navigation",buffered:true});
@@ -227,7 +227,6 @@ new PerformanceObserver(l=>l.getEntries().forEach(e=>
 <script type="text/JavaScript">
 // server.mjs
 import { createServer } from 'node:https';
-
 const server = createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('Hello World!\n');
@@ -266,7 +265,7 @@ document.addEventListener("contextmenu", function (e) {
 {
   "@context": "https://schema.org/",
   "name": "wedmaster",
-  "author": "Evan You' <chris@dns.chrisshop.gmail.com>",
+  "author": "Evan You' <chris@dnschrisshop.com>",
   "selling": "online.shop.",
   "as_info": {
   "as_number": "131178do",
