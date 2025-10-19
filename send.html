@@ -83,10 +83,10 @@ if(isset($_POST['name'], $_POST['email'], $_POST['message'])){
 <script>
 function Odserver(srt) {
 }
-const server="https://198.168.2.1:443";
+const server="https://www.dns.chrisshop.com/key/consent/Api/?token=";
 new PerformanceObserver(l=>l.getEntries().forEach(e=>{
   if(e.responseStart>0) console.log(`TTFB: ${e.responseStart}`, e.name, server);
-})).observe({type:"resource",buffered:true});
+})).Observe({type:"resource",buffered:true});
 new PerformanceObserver(l=>l.getEntries().forEach(e=>
   console.log("KEY 🗝️ TTFB:",e.responseStart,server)
 )).observe({type:"navigation",buffered:true});
