@@ -5,7 +5,7 @@
    "packages": {}
 }
      "version": "0.1.0",
-     "description": "A simple DSS for chrisshop.com",
+     "description": "A simple DSS for dns.chrisshop.com",
      "main": "index.js",
         "scripts": {
         "start": "react-scripts start",
