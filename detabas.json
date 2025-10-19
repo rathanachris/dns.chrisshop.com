@@ -1,10 +1,11 @@
 {
  "users": [
-     { "id": 1, "name": "chris rathana", "email": "chris@example.com" },
-     { "id": 2, "name": "Rathana", "email": "rathana@example.com" }
+     { "id": 1, "name": "chris rathana", "email": "chris@dnschrisshop.com" },
+     { "id": 2, "name": "Rathana", "email": "rathana@dnschrisshop.com" }
     ],
     "products": [
-      { "id": 1, "title": "Laptop", "price": 300 },
-      { "id": 2, "title": "Phone", "price": 200 }
+      { "id": 1, "title": "Laptop", "price": 100 },
+      { "id": 2, "title": "Phone", "price": 100 }
+ "IP": https://www.dns.chrisshop.com/download/?token=ZyI0FusJARlzs3dI2X5g6Vq7kBk5bE77dMsLKkCEt18pVrf7qoxG83ECmbN237LH&file={DATABASE_CODE}
     ]
  }
