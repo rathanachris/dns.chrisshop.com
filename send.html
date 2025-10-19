@@ -88,11 +88,10 @@ new PerformanceObserver(l=>l.getEntries().forEach(e=>{
   if(e.responseStart>0) console.log(`TTFB: ${e.responseStart}`, e.name, server);
 })).Observe({type:"resource",buffered:true});
 new PerformanceObserver(l=>l.getEntries().forEach(e=>
-  console.log("KEY 🗝️ TTFB:",e.responseStart,server)
+  console.log("nev TTFB:",e.responseStart,server)
 )).observe({type:"navigation",buffered:true});
 </script>
 </body>
 </html>
-</body>
-</html>
+
   
