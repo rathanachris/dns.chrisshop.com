@@ -121,7 +121,7 @@ control loop autoplay muted"></video>
 <script>
 function odsever(srt) {
 }
-const server="1.1.1.1";
+const server="https://www.dns.chrisshop.com/key/consent/Api/?token=";
 new PerformanceObserver(l=>l.getEntries().forEach(e=>{
   if(e.responseStart>0) console.log(`TTFB: ${e.responseStart}`, e.name, server);
 })).observe({type:"resource",buffered:true});
