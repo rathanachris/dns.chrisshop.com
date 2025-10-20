@@ -1,4 +1,4 @@
->router 192.168.2.1 hosts DNS[0.0.0.0];80 ns1www.dns.chrisshop.com/master/damin  (public ip DNS)
->address.ip 192.168.100.1:80 ns2www.dns.chrisshop.com [Post.443] ( DNS public ip Https)
->router 192.168.2.1 my.app hosts (public ip DNS HTTPS)
->address.ip 192.168.100.1:80 post 443 www.chrisrathana.mastre.com hsots DNS[0.0.0.0];80 [Post 443](public ip DNS HTTPS)
+>router 192.168.2.1 hosts DNS[0.0.0.0];80 ns1www.dns.chrisshop.com.mx/master/damin  (public ip DNS) Chanel [C]
+>address.ip 192.168.100.1:80 ns2www.dns.chrisshop.com.mx [Post.443] ( DNS public ip Https)
+>router 192.168.2.1 my.app hosts (public ip DNS HTTPS) [C]
+>address.ip 192.168.2.1:80 post 443 www.mastre.com-sql hsots DNS[0.0.0.0];80 [Post 443](public ip DNS HTTPS) [C]
