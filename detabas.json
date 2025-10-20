@@ -6,7 +6,5 @@
     "products": [
       { "id": 1, "title": "Laptop", "price": 100 },
       { "id": 2, "title": "Phone", "price": 100 }
-}
- "address ip": https://www.dns.chrisshop.com/key/api/?token=ZyI0FusJARlzs3dI2X5g6Vq7kBk5bE77dMsLKkCEt18pVrf7qoxG83ECmbN237LH&file={DATABASE_CODE}
     ]
  }
