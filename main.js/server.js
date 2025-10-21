@@ -8,5 +8,5 @@ const serverPort = config.server.port443;
 const dbUrl = config.database.url;
 
 Initialize server with the loaded config
-console.log(`Server running on port443 ${serverPort}     `);
+console.log(`Server running on https://$host$request_uri;port443 ${serverPort}     `);
 }
