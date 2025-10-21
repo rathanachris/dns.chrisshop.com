@@ -1,7 +1,7 @@
 {
  "users": [
-     { "id": 1, "name": "chris rathana", "email": "chris@dnschrisshop.com." },
-     { "id": 2, "name": "Rathana", "email": "rathana@dnschrisshop.com" }
+     { "id": 1, "name": "chris rathana", "email": "chris@dnschrisshop.com.mx" },
+     { "id": 2, "name": "Rathana", "email": "rathana@dnschrisshop.com.mx" }
     ],
     "products": [
       { "id": 1, "title": "Laptop", "price": 100 },
