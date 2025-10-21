@@ -3,7 +3,7 @@
   "without-connection-token": false,
   "disable-websocket-compression": false,
   "print-startup-performance": false,
-  "print-ip-address": false,
+  "print-ip-address": 192.169.1.1,
   "accept-server-license-terms": true,
   "server-data-dir": false,
   "server-data":false,
