@@ -1,0 +1,10 @@
+// example PHP with Redis
+$redis = new Redis();
+$redis->connect('10.0.2.2', 6379);
+$cacheKey = 'total_volume';
+if ($redis->exists($cacheKey)) {
+    $totalVolume = $redis->get($cacheKey);
+} else {
+    $totalVolume = // Run SQL query;
+    $redis->set($cacheKey, $totalVolume, 3600); // Cache for 1 hour
+}
