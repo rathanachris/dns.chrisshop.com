@@ -1,0 +1,39 @@
+{
+  "success": true,
+  "errors": [],
+  "result": {
+    "main": [],
+    "previous": [],
+    "compkh": [],
+    "previousCompkh": [],
+    "meta": {
+      "dateRange": [
+        {
+          "startTime": "2025-10-07T08:00:00Z",
+          "endTime": "2025-10-14T08:00:00Z"
+        },
+        {
+          "startTime": "2025-09-30T08:00:00Z",
+          "endTime": "2025-10-07T08:00:00Z"
+        },
+        {
+          "startTime": "2025-10-07T08:00:00Z",
+          "endTime": "2025-10-14T08:00:00Z"
+        },
+        {
+          "startTime": "2025-09-30T08:00:00Z",
+          "endTime": "2025-10-07T08:00:00Z"
+        }
+      ],
+      "confidenceInfo": null,
+      "normalization": "PERCENTAGE",
+      "lastUpdated": "2025-10-14T09:00:00Z",
+      "units": [
+        {
+          "name": "www.dns.chrisshop.com",
+          "value": "queries"
+        }
+      ]
+    }
+  }
+}
