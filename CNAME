@@ -1,1 +1,2 @@
->router 198.169.2.1  www.dns.chrisshop.com hsots [0.0.0.0]:80 ( public ip Dns)
+>router198.169.2.1  www.dns.chrisshop.com.mx hsots DNS[0.0.0.0]:80 post 443 ( public ip Cambodia Dns ) 
+
