@@ -5,7 +5,8 @@
   "print-startup-performance": false,
   "print-ip-address": false,
   "accept-server-license-terms": true,
-  "server-data-dir": "./server-data",
+  "server-data-dir": false,
+  "server-data":false,
   "vscode-remote": false,
   "enable-smoke-test-driver": false,
   "disable-telemetry": false,
@@ -30,5 +31,5 @@
   "help": false,
   "version": false,
   "user-data-dir": null,
-  "builtin-extensions-dir": null
+  "builtin-extensions-dir": null,
 }
