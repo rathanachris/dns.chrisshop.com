@@ -1,0 +1,6 @@
+- WebDriver:
+      url: 'https://www.dns.chrisshop.com/my-project'
+      browser: chrome  # ឬ firefox
+      capabilities:
+          chrome:
+              goog:chromeOptions: ["--headless"]  # រត់ដោយមិនបង្ហាញ browser
