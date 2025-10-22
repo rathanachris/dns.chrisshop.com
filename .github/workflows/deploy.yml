@@ -1,0 +1,29 @@
+name: Deploy to Google Cloud
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Google Cloud CLI
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: your-project-id
+          service_account_key: ${{ secrets.GCLOUD_SERVICE_KEY }}
+
+      - name: Authenticate to Google Cloud
+        run: |
+          gcloud auth activate-service-account --key-file=$GOOGLE_APPLICATION_CREDENTIALS
+          gcloud config set project your-project-id
+
+      - name: Deploy
+        run: |
+          gcloud app deploy --quiet
+
