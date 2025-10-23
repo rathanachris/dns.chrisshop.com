@@ -1,4 +1,4 @@
-// example PHP with Redis
+
 $redis = new Redis();
 $redis->connect('10.0.2.2', 6379);
 $cacheKey = 'total_volume';
