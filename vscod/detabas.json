@@ -1,6 +1,6 @@
 {
  "users": [
-     { "id": 1, "name": "chris rathana", "email": "chris@dnschrisshop.com.mx" },
+     { "id": 1, "name": "chris rathana", "email": "chris@chrisshop.com.mx" },
      { "id": 2, "name": "Rathana", "email": "rathana@dnschrisshop.com.mx" }
     ],
     "products": [
