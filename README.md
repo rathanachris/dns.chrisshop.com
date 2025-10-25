@@ -47,5 +47,5 @@ chrisshop.com\
   chrisshop.com
   🌍 Website URL: https://www.dns.chrisshop.com-web.f.5.b.h.a.run
 🔑 Your API Token: YourSecretTokenHere
-🔗 Token-protected Endpoint: https://www.dns.chrisshop.com/Aip/key/js/&token=consent="api:0AVGzR1AqiV8X2tKjraW00JoRl28ymIVpXUtz-iyo6hOBEZ26XKTnS9IdJi0k3VP0bYIkuw"
+🔗 Token-protected Endpoint: https://www.dns.chrisshop.com/Aip/key/js/&token=consent:"api=0AVGzR1AqiV8X2tKjraW00JoRl28ymIVpXUtz-iyo6hOBEZ26XKTnS9IdJi0k3VP0bYIkuw"
 
