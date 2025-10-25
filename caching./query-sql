@@ -1,10 +1,10 @@
 
 $redis = new Redis();
-$redis->connect('10.0.2.2', 6379);
+$redis->connect('10.0.2.2', 8282);
 $cacheKey = 'total_volume';
 if ($redis->exists($cacheKey)) {
     $totalVolume = $redis->get($cacheKey);
 } else {
     $totalVolume = // Run SQL query;
-    $redis->set($cacheKey, $totalVolume, 3600); // Cache for 1 hour
+    $redis->set($cacheKey, $totalVolume, 8282); // Cache for 1 hour
 }
