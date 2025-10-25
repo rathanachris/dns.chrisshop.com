@@ -1,7 +1,8 @@
 ################################################################################################
-# The authenticity of host:80[ssh.dns.chrisshop.com]:443.([192.168.100:1]:443)'established     #                                        #[ED25519 256]key fingerprint is.       #SHA256:+wfNrz+rkSTv9+c08dbDRGiRXU0nK6Bpvp#Govk5VBT1M                                #
-# This host key is known by the following other names/addresses:                               #                     
-#.       ~/.ssh/id_ed25519  known_hosts80:dns.chrisshop.com Chanel [C]                         #                                          #
+# The authenticity of host:80[ssh.dns.chrisshop.com]:443.([192.168.100:1]:443'establish.       #
+# [ED25519 256]key fingerprint is.SHA256:+wfNrz+rkSTv9+c08dbDRGiRXU0nK6Bpvp#Govk5VBT1M         #
+# This host key is known by the following other names/addresses:r_chris@dnschrisshop.com       #
+#.       ~/.ssh/id_ed25519  known_hosts80:dns.chrisshop.com  Chanel [C]                        #
 # Are you sure you want to continue. connecting (yes)[fingerprint])?                           #           
 ################################################################################################
 >router: 192.168.2.1 ns1www.dns.chrisshop.com hosts DNS[1.1.1.1] DNS[8.8.8.8];80(public ip DNS) 
