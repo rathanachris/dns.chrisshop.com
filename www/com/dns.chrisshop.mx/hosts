@@ -1,5 +1,5 @@
 ##########################################
-# The authenticity of host:80[ssh.dns.chrisshop.com]:443([192.168.100:1]:443)'established                                               # key fingerprint is[ED25519 256] key                       
+#The authenticity of host80  #[ssh.dns.chrisshop.com]:443([192.168.100:1]:443)'established                                               # key fingerprint is[ED25519 256] key                       
 # This host key is known by the following other names/addresses:                               #                     
 #~/.ssh/id_ed25519  known_hosts80:dns.chrisshop.com Chanel [C]                         #                                          #
 # Are you sure you want to continue.   connecting (yes)[fingerprint])?                           #           
