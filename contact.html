@@ -111,6 +111,7 @@ required></textarea>
 <a href="#"><i class="fab fa-tiktok" style="font-size:3rem;color:#556dff;"></i></a>
 </center>
 </footer>
+<script>
 @using TXTextControl.Web.MVC.DocumentViewer
 
 @Html.TXTextControl().DocumentViewer(settings => {
@@ -126,6 +127,7 @@ required></textarea>
            SignatureBoxName = "txsign",
            UniqueId = "1234-1234-1234-1234" };
 }).Render()
+</script>
 <!-- Your Custom JavaScript -->
 <script>
     // Create map and set center [Latitude, Longitude] and zoom level
