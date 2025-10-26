@@ -1,0 +1,15 @@
+@using TXTextControl.Web.MVC.DocumentViewer
+
+@Html.TXTextControl().DocumentViewer(settings => {
+    settings.DocumentPath =
+        AppDomain.CurrentDomain.GetData("DataDirectory").ToString() + "\demo.docx";
+    settings.UserNames = new string[] { "Tim Typer" };
+    settings.Dock = DocumentViewerSettings.DockStyle.Window;
+    settings.ShowThumbnailPane = false;
+    settings.SignatureSettings = new SignatureSettings() {
+           OwnerName = "Paul Paulsen",
+           SignerName = "Tim Typer",
+           SignerInitials = "TT",
+           SignatureBoxName = "txsign",
+           UniqueId = "1234-1234-1234-1234" };
+}).Render()
