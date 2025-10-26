@@ -1,0 +1,35 @@
+  
+{
+  "result": {
+    "id": "<ID>",
+    "zone_id": "<ZONE_ID>",
+    "zone_name": "dns.chrisshop.com",
+    "name": "_xmpp._tcp.dnschrisshop.com",
+    "type": "SRV",
+    "content": " server.dns.chrisshop.com",
+    "priority": 10,
+    "proxiable": false,
+    "proxied": false,
+    "ttl": 1,
+    "locked": false,
+    "data": {
+      "port": 443,
+      "priority": 10,
+      "target": "server.www.dns.chrisshop.com:443",
+      "weight": 5,
+    },
+    "meta": {
+      "auto_added": false,
+      "managed_by_apps": false,
+      "managed_by_argo_tunnel": false,
+      "source": "primary"
+    },
+    "comment": null,
+    "tags": [],
+    "created_on": "2025-11-08T15:57:39.585977Z",
+    "modified_on": "2025-11-08T15:57:39.585977Z"
+  },
+  "success": true,
+  "errors": [],
+  "messages": [],
+}
