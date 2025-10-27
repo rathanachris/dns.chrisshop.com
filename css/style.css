@@ -574,18 +574,15 @@ width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radiu
 .social-icons i team{
   margin-right: 6px;
 }
-footer {
-  background-color: #d4a373;
+.footer {
+  width: 100%;
+  background-color: #000;
   color: #fff;
-  padding: 30px 20px;
   text-align: center;
-  border-top: 1px solid #444;    /* បន្ថែមចន្លោះខាងក្នុង */
-  background: #000;              /* ពណ៌ខ្មៅ */
-  color: white;                  /* អក្សរសស */
-  text-align: center;            /* កណ្ដាលអក្សរ */
-  
-}
-footer-li {  
+  padding: 20px 0;
+  margin: 0;
+}         
+.footer-li {  
   color: White;    
   background: #55d5ff;
   text-decoration: none;  
