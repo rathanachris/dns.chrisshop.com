@@ -574,12 +574,18 @@ width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radiu
 .social-icons i team{
   margin-right: 6px;
 }
-footer{
-  padding:30px;
-  margin-top:20px;
-  color: White;
-  background: black;
-  margin-bottom: 1%;
+footer {
+  width: 100vw;           /* ទទឹងស្មើអេក្រង់ទាំងមូល */
+  margin: 0;              /* ដកចន្លោះខាងក្រៅ */
+  padding: 20px 0;        /* បន្ថែមចន្លោះខាងក្នុង */
+  background: #000;       /* ពណ៌ខ្មៅ */
+  color: white;           /* អក្សរសស */
+  text-align: center;     /* កណ្ដាលអក្សរ */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 footer-li {  
   color: White;    
