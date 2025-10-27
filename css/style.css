@@ -106,7 +106,7 @@ header label.fas {
 /* Responsive */
 @media (max-width: 991px) {
   header nav ul {
-    font-size: 50%;
+    font-size: 30%;
     position: absolute;
     top: 100%;
     left: 0;
