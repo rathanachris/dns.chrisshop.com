@@ -106,7 +106,7 @@ header label.fas {
 /* Responsive */
 @media (max-width: 768px) {
   header nav ul {
-    font-size: 30%;
+    font-size: 50%;
     position: absolute;
     top: 100%;
     left: 0;
@@ -575,15 +575,15 @@ width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radiu
   margin-right: 6px;
 }
 footer {
-  width: 100%;           /* ទទឹងស្មើអេក្រង់ទាំងមូល */
-  margin: 0;              /* ដកចន្លោះខាងក្រៅ */
-  padding: 20px 0;        /* បន្ថែមចន្លោះខាងក្នុង */
-  background: #000;       /* ពណ៌ខ្មៅ */
-  color: white;           /* អក្សរសស */
-  text-align: center;     /* កណ្ដាលអក្សរ */
-  position: relative;
-  left: 50%;
-  right: 50%;
+  background-color: #d4a373;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid #444;    /* បន្ថែមចន្លោះខាងក្នុង */
+  background: #000;              /* ពណ៌ខ្មៅ */
+  color: white;                  /* អក្សរសស */
+  text-align: center;            /* កណ្ដាលអក្សរ */
+  
 }
 footer-li {  
   color: White;    
