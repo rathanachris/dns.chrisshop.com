@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Deploy Cloud Function",
+      "type": "cloudcode.cloudfunctions",
+      "request": "launch",
+      "functionName": "dns.chrisshop.com",
+      "gen": "2",
+      "runtime": "nodejs20",
+      "entryPoint": "main",
+      "region": "us-kh-central1",
+      "testInput": {
+        "message": "Test deploy from VS Code"
+      },
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "projectId": "dns-chrisshop-com",
+      "source": "${workspaceFolder}",
+      "deploy": {
+        "trigger": "http",
+        "allowUnauthenticated": true
+      }
+    }
+  ]
+}
