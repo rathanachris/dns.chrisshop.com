@@ -575,7 +575,7 @@ width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radiu
   margin-right: 6px;
 }
 footer {
-  width: 100vw;           /* ទទឹងស្មើអេក្រង់ទាំងមូល */
+  width: 100%;           /* ទទឹងស្មើអេក្រង់ទាំងមូល */
   margin: 0;              /* ដកចន្លោះខាងក្រៅ */
   padding: 20px 0;        /* បន្ថែមចន្លោះខាងក្នុង */
   background: #000;       /* ពណ៌ខ្មៅ */
@@ -584,8 +584,6 @@ footer {
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
 }
 footer-li {  
   color: White;    
