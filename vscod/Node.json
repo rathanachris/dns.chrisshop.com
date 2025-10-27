@@ -19,7 +19,7 @@
       "projectId": "dns-chrisshop-com",
       "source": "${workspaceFolder}",
       "deploy": {
-        "trigger": "http",
+        "trigger": "https%3A",
         "allowUnauthenticated": true
       }
     }
