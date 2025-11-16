@@ -1,0 +1,59 @@
+name: Gemini Go CI 
+
+on: push: pull_request
+
+jobs: build: runs-on: ubuntu-latest strategy: matrix: go: [ '1.14', '1.13' ]
+
+name: Go ${{ matrix.go }} sample
+
+steps:
+  - uses: actions/checkout@v5
+
+  - name: Setup Go
+    uses: actions/setup-go@v6
+    with:
+      go-version: ${{ matrix.go }}
+
+  - run: go run hello.go
+
+build_latest: runs-on: ubuntu-latest
+
+steps:
+  - uses: actions/checkout@v5
+
+  - name: Setup Go 1.18 with token
+    uses: actions/setup-go@v6
+    with:
+      token: ${{ secrets.GH_DOTCOM_TOKEN }}
+      go-version: '1.18'
+
+  - run: go version
+
+build_tools_version: runs-on: ubuntu-latest
+
+steps:
+  - uses: actions/checkout@v5
+
+  - name: Setup Go from .tool-versions
+    uses: actions/setup-go@v6
+    with:
+      go-version-file: '.tool-versions'
+
+  - run: go versions6
+
+build_cached: runs-on: ubuntu-latest
+
+steps:
+  - uses: actions/checkout@v5
+
+  - name: Setup Go 1.17 with cache
+    uses: actions/setup-go@v6
+    with:
+      go-version: '1.17'
+      check-latest: true
+      cache-dependency-path: |
+        subdir/go.sum
+        tools/go.sum
+
+  - run: go run hello.go
+         r.Run (':8080')
