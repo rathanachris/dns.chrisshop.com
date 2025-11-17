@@ -1,0 +1,33 @@
+{
+  "version": 6,
+  "domain": "dns.chrisshop.com.live",
+  "dns": {
+    "A": [
+      {
+        "host": "www",
+        "ip": "192.168.1.10"
+      }
+    ],
+    "CNAME": [
+      {
+        "host": "api",
+        "target": "backend.dns.chrisshop.com"
+      }
+    ],
+    "MX": [
+      {
+        "priority": 10,
+        "target": "mail.dns.chrisshop.com"
+      }
+    ],
+    "NS": [
+      "ns1.dns.chrisshop.com.AAA",
+      "ns2.dns.chrisshop.com.AAA"
+    ]
+  },
+  "environment": "live",
+  "service": {
+    "status": "online google.analaytis",
+    "updated": "2025-11-17T00:00:00Z"
+  }
+}
