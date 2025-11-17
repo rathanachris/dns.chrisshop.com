@@ -2,16 +2,16 @@
    "project.name": "dns.chrisshop.com",
    "lockfileVersion": 3,
    "requires": true,
-   "packages": {}
+   "packages": ${"pagkkah.json"},
 }
      "version": "0.1.0",
-     "description": "A simple DSS for dns.chrisshop.com",
+     "description": "A simple TTl @ AAA for dns.chrisshop.com:443",
      "main": "index.js",
         "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts types --env=jsdom",
-        "eject": "react-scripts eject"
+        "chrome": 
+        "browser": 
+        "wed": 
+        "⏏️": 
 
 },
    "author": {"email": "chris@dnschrisshop.com"},
