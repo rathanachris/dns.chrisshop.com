@@ -31,6 +31,8 @@ jobs:
     - run: npm test
     - run: npm install
     - run: npm run build # ឬ script ផ្សេងៗ
-    
+    permissions:
+       contents: write
+       packages: write
   
     
