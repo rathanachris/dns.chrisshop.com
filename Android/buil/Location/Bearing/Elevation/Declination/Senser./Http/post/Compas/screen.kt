@@ -1,7 +1,7 @@
-private lateinit var sensorManager: SensorManager
-private var deviceAzimuth = 0f
+public lateinit var sensorManager: SensorManager
+public var deviceAzimuth = 0f
 
-private val sensorListener = object : SensorEventListener {
+public val sensorListener = object : SensorEventListener {
     override fun onSensorChanged(e: SensorEvent) {
         val rotation = FloatArray(9)
         val orientation = FloatArray(3)
@@ -14,7 +14,7 @@ private val sensorListener = object : SensorEventListener {
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {}
 }
 
-private fun startCompass() {
+public fun startCompass() {
     sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
     val sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ROTATION_VECTOR)
     sensorManager.registerListener(sensorListener, sensor, SensorManager.SENSOR_DELAY_UI)
