@@ -1,0 +1,1 @@
+relativeAngle = (azToSat - deviceAzimuth - declination + 360) % 360
