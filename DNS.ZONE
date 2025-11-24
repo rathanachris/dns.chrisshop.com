@@ -13,10 +13,10 @@ $TTL 300
 @       IN      NS      ns2.dns.chsishop.com.
 
 ; A Records.   IP public 
-@                 IN  A   58.97.216.140
-https             IN  A   58.97.216.140
-dns.chsishop.com  IN  A   58.97.216.140
-*www              IN  A   58.97.216.140
+@                 IN  A   58.97.216.251
+https             IN  A   58.97.216.251
+dns.chsishop.com  IN  A   58.97.216.251
+*www              IN  A   58.97.216.251
 
 ; CNAME
 www         IN   CNAME   dns.chsishop.com
