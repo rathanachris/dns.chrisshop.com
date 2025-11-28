@@ -152,12 +152,12 @@ header label.fas {
   font-weight: bolder;
 }
 .home.content p{
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 1rem 0;
   line-height: 1.5;
-  color: #999;
+  color: blue;
   text-transform: none;
-  height: ;
+  height: 10px;
 }
 @media (max-width: 450px){
    html{
