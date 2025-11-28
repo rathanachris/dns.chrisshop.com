@@ -15,7 +15,7 @@
     "data": {
       "port": 443,
       "priority": 10,
-      "target": "https;//127.0.0.1/www.dns.chrisshop.com:443",
+      "target": "https;//www.dns.chrisshop.com:443",
       "weight": 5,
     },
     "meta": {
