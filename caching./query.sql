@@ -1,6 +1,6 @@
 
 $redis = new Redis();
-$redis->connect('https://127.0.0.1', 8282);
+$redis->connect('https://192.168.100.30:', 8282);
 $cacheKey = 'total_volume';
 if ($redis->exists($cacheKey)) {
     $totalVolume = $redis->get($cacheKey);
