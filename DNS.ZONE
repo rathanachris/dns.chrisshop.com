@@ -1,7 +1,7 @@
 DNS
 
 $TTL 300
-@       IN   AAAA   SOA     ns1.dns.chsishop.com. emlie@dnschsishop.com. (
+@       IN   AAAA   SOA     ns1.dns.chsishop.com.txt emlie@dnschsishop.com. (
                         2025011501 ; Serial
                         3600       ; Refresh
                         1800       ; Retry
@@ -9,8 +9,8 @@ $TTL 300
                         300 )      ; Negative Cache TTL
 
 ; Nameservers
-@       IN      NS      ns1.dns.chsishop.com.
-@       IN      NS      ns2.dns.chsishop.com.
+@       IN      NS      ns1.dns.chsishop.com.txt
+@       IN      NS      ns2.dns.chsishop.com.txt
 
 ; A Records.   IP public 
 @                 IN  A   58.97.216.251
@@ -19,10 +19,10 @@ dns.chsishop.com  IN  A   58.97.216.251
 *www              IN  A   58.97.216.251
 
 ; CNAME
-www         IN   CNAME   dns.chsishop.com
+www         IN   CNAME   dns.chsishop.com.txt
 
 ; Email (optional)
-@           IN  MX 10   mx.dns.chsishop.com.
+@           IN  MX 10   mx.dns.chsishop.com.txt
 
 ; SPF
 @           IN  TXT     "v=spf1 a mx ~all"
