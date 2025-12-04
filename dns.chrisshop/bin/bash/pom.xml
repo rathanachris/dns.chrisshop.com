@@ -1,0 +1,9 @@
+<project>
+  ...
+  <build>
+    <!-- Default goal when running `mvn` without specifying a goal -->
+    <defaultGoal>install</defaultGoal>
+    ...
+  </build>
+  ...
+</project>
