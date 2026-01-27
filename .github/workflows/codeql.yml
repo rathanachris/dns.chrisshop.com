@@ -43,7 +43,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-        - language: actions
+        - language: go
           build-mode: none
         - language: php
           build-mode: none
@@ -56,7 +56,30 @@ jobs:
         - language: cpp
           build-mode: none
           
-        # CodeQL supports the following values keywords for 'language': 'php', 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'rust', 'swift',
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Setup Go (បើមាន Go project)
+      - name: Set up Go
+        if: matrix.language == 'go'
+        uses: actions/setup-go@v1.21
+        with:
+          go-version: '>=1.21'   # ប្តូរទៅជា version ដែល project របស់អ្នកប្រើ (1.21+ ល្អជាង 1.0.13)
+
+      # Setup Python (បើមាន Python project)
+      - name: Set up Python
+        if: matrix.language == 'python'
+        uses: actions/setup-python@v3.x
+        with:
+          python-version: '3.x'   # ប្រើ 3.x ឬ version ជាក់លាក់ដែល project ប្រើ (កុំប្រើ 1.0.13)
+      # Setup c-pp (បើមាន  c-pp project)
+      - name: Set up c-pp
+        if: matrix.language == 'c-cpp'
+        uses: actions/setup-c-cpp@v5
+        with:
+          python-version: '3.x'   # ប្រើ 3.x ឬ version ជាក់លាក់ដែល project ប្រើ (កុំប្រើ 1.0.13)  
+        # language': 'php', 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'rust', 'swift',
         # Use `c-cpp` to analyze code written in C, C++ or both
         # Use 'java-kotlin' to analyze code written in Java, Kotlin or both
         # Use 'javascript-typescript' to analyze code written in JavaScript, TypeScript or both
@@ -64,7 +87,7 @@ jobs:
         # see https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning.
         # If you are analyzing a compiled language, you can modify the 'build-mode' for that language to customize how
         # your codebase is analyzed, see https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-code-scanning-for-compiled-languages
-    steps:
+env:
     - name: Checkout repository
       uses: actions/checkout@v4
 
