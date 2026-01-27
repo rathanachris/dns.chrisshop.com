@@ -44,15 +44,15 @@ jobs:
       matrix:
         include:
         - language: php
-          autobuild-mode: none
+          build-mode: none
         - language: java-kotlin
-          autobuild-mode: none # This mode only analyzes Java. Set this to 'autobuild' or 'manual' to analyze Kotlin too.
+          build-mode: none # This mode only analyzes Java. Set this to 'autobuild' or 'manual' to analyze Kotlin too.
         - language: javascript-typescript
           build-mode: none
         - language: python
-          autobuild-mode: none
-        - language: c-cpp
-          autobuild-mode: none
+          build-mode: none
+        - language: cpp
+          build-mode: none
           
         # CodeQL supports the following values keywords for 'language': 'php', 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'rust', 'swift',
         # Use `c-cpp` to analyze code written in C, C++ or both
