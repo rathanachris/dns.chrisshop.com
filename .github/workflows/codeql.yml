@@ -30,7 +30,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        include:
           - language: go 
             Autobuild-mode: none
           - language: python
@@ -44,7 +43,7 @@ jobs:
           - language: php
             Autobuild-mode: none
 
-      # បញ្ជាក់ភាសាទាំងអស់ដែលអ្នកចង់ Scan
+        # បញ្ជាក់ភាសាទាំងអស់ដែលអ្នកចង់ Scan
         language: [ 'go', 'python', 'cpp', 'java-kotlin', 'javascript-typescript' ]
     steps:      
       - name: Checkout repository
@@ -77,7 +76,7 @@ jobs:
         # see https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning.
         # If you are analyzing a compiled language, you can modify the 'build-mode' for that language to customize how
         # your codebase is analyzed, see https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-code-scanning-for-compiled-languages
-     env:
+    include:
     - name: Checkout repository
       uses: actions/checkout@v4
 
