@@ -1,0 +1,98 @@
+# For most projects, this workflow file will not need changing; you simply need
+# to commit it to your repository.
+#
+# You may wish to alter this file to override the set of languages analyzed,
+# or to provide custom queries or build logic.
+#
+# NOTE: បានកែសម្រួលឲ្យគាំទ្រ Go, Python, JavaScript/TypeScript, C/C++, Java
+# ប្រើ matrix.include ដើម្បីគ្រប់គ្រងភាសានីមួយៗឲ្យច្បាស់លាស់
+
+name: "CodeQL Advanced"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '0 16 * * 6'   # រៀងរាល់ថ្ងៃសៅរ៍ ម៉ោង 16:00 UTC (~ម៉ោង 23:00 នៅកម្ពុជា)
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+      packages: read   # ត្រូវការសម្រាប់ private CodeQL packs (បើមាន)
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - language: go 
+            Autobuild-mode: none
+          - language: python
+            build-mode: none
+          - language: javascript-typescript 
+            Autobuild-mode: none
+          - language: cpp
+            Autobuild-mode: none
+          - language: java-kotlin 
+            Autobuild-mode: none
+
+      # បញ្ជាក់ភាសាទាំងអស់ដែលអ្នកចង់ Scan
+        language: [ 'go', 'python', 'cpp', 'java-kotlin', 'javascript-typescript' ]
+    steps:      
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Setup Go (បើមាន Go project)
+      - name: Set up Go
+        if: matrix.language == 'go'
+        uses: actions/setup-go@v5
+        with:
+          go-version: '>=1.21'   # ប្តូរទៅជា version ដែល project របស់អ្នកប្រើ (1.21+ ល្អជាង 1.0.13)
+
+      # Setup Python (បើមាន Python project)
+      - name: Set up Python
+        if: matrix.language == 'python'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'   # ប្រើ 3.x ឬ version ជាក់លាក់ដែល project ប្រើ (កុំប្រើ 1.0.13)
+
+      # បន្ថែម setup ផ្សេងទៀតបើចាំបាច់ (ឧ. Node.js សម្រាប់ JS/TS)
+      # - name: Set up Node.js
+      #   if: matrix.language == 'javascript-typescript'
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: '20'
+
+      # Initializes the CodeQL tools
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3   # ប្រើ v3 ឬ v2 ដែលទាន់សម័យបំផុត (v3 ល្អជាង v5 ដែលមិនទាន់មាននៅឆ្នាំ 2025)
+        with:
+          languages: ${{ matrix.language }}
+          build-mode: ${{ matrix.Autobuild-mode }}
+          # queries: security-extended          # បើចង់បន្ថែម queries បន្ថែម (បើប្រើ config file អាចលុប)
+
+      # បើ project របស់អ្នកជា compiled language (cpp, java-kotlin, go) ហើយ autobuild មិនដំណើរការ
+      # អ្នកអាចប្តូរ build-mode: manual រួចបន្ថែម build command នៅទីនេះ
+      - name: Autobuild (optional - remove if using manual build)
+        if: matrix.Autobuild-mode != 'none'
+        uses: github/codeql-action/autobuild@v3
+
+      # បើចង់ប្រើ manual build សម្រាប់ភាសាណាមួយ ប្តូរ if condition និងដាក់ command ពិតប្រាកដ
+      # - name: Manual build (example)
+      #   if: matrix.build-mode == 'manual'
+      #   run: |
+      #     # ដាក់ command build ពិតប្រាកដរបស់អ្នកទីនេះ
+      #     make build
+      #     # ឬ npm run build, mvn package, go build, etc.
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+        with:
+          category: "/language:${{ matrix.language }}"
+        
