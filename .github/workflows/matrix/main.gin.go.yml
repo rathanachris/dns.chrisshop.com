@@ -1,0 +1,59 @@
+name: Gemini Go CI
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  # Job 1: សម្រាប់តេស្តជាមួយ Go ច្រើន Version (Matrix)
+  build-matrix:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go: [ '1.21', '1.22' ] # ប្រើ version ថ្មីៗ
+    name: Go ${{ matrix.go }}
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.go }}
+          
+      - name: Run Hello
+        run: go run hello.go
+
+  # Job 2: សម្រាប់ប្រើ Go version ពី file .tool-versions
+  build-from-tool:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Go from .tool-versions
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: '.tool-versions'
+          
+      - name: Check version
+        run: go version
+
+  # Job 3: សម្រាប់ Cache និងតេស្តលើ Subdirectory
+  build-cached:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Go with Cache
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+          check-latest: true
+          cache-dependency-path: |
+            go.sum
+            # subdir/go.sum (បើមាន)
+            
+      - name: Build and Test
+        run: |
+          go version
+          # ប្រសិនបើចង់ run code ត្រូវប្រាកដថាមាន file hello.go
+          if [ -f hello.go ]; then go run hello.go; fi
