@@ -9,7 +9,7 @@
       "gen": "2",
       "runtime": "nodejs20",
       "entryPoint": "main",
-      "region": "us-kh-central1",
+      "region": "us-kh-12-central1",
       "testInput": {
         "message": "Test deploy from VS Code"
       },
