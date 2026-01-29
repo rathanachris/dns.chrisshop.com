@@ -19,7 +19,7 @@
 -->
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.dnschrisshop</groupId>
+    <groupId>com.dns.chrisshop</groupId>
     <artifactId>my.app</artifactId>
     <version>1.0.13</version>
     <packaging>demo</packaging>
