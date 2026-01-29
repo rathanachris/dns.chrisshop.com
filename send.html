@@ -80,10 +80,12 @@ if(isset($_POST['name'], $_POST['email'], $_POST['message'])){
     exit();
 }
 ?>
+
 <script>
 function Odserver(srt) {
 }
 const server="https://www.dns.chrisshop.com/key/consent/Api/?token=";
+
 new PerformanceObserver(l=>l.getEntries().forEach(e=>{
   if(e.responseStart>0) console.log(`TTFB: ${e.responseStart}`, e.name, server);
 })).Observe({type:"resource",buffered:true});
