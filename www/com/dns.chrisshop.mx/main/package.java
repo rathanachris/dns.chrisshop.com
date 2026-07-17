@@ -6,7 +6,7 @@ public class com.chrisrathana.java.net{
      HttpsURLConnection conn = Query
       (HttpsURLConnection)
       
-       url.openConnection("1759432452129");
+       url.openConnection("Query");
        
 conn.setRequestProperty("Authorizati + token); on", "Bearer 11
 
