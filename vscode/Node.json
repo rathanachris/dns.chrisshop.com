@@ -16,7 +16,7 @@
       "env": {
         "NODE_ENV": "production"
       },
-      "projectId": "dns-chrisshop-com",
+      "projectId": "73fa2235ff4b1c95039a840767f33fb63",
       "source": "${workspaceFolder}",
       "deploy": {
         "trigger": "https%3A",
