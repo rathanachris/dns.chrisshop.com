@@ -3,5 +3,5 @@ actor: AcceptanceTester
 modules:
     enabled:
         - PhpBrowser:
-              url: 'https://www.dns.chrisshop.com.wed%20a.run/my-project'  # URL គម្រោងរបស់អ្នក
+              url: 'https://dns.chrisshop.com.wed%20a.run/my-project'  # URL គម្រោងរបស់អ្នក
         - \Helper\Acceptance
