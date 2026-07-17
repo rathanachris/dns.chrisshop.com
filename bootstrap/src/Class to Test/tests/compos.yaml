@@ -1,5 +1,5 @@
 - WebDriver:
-      url: 'https://www.dns.chrisshop.com/my-project'
+      url: 'https://dns.chrisshop.com/my.domin'
       browser: chrome  # ឬ firefox
       capabilities:
           chrome:
