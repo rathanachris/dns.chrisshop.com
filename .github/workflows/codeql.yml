@@ -31,7 +31,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - language: go 
+          - language: php
             Autobuild-mode: none
           - language: python
             build-mode: none
@@ -41,16 +41,18 @@ jobs:
             Autobuild-mode: none
           - language: java-kotlin 
             Autobuild-mode: none
+          - language: c.c++
+            Autobuild-mode: none
 
       # បញ្ជាក់ភាសាទាំងអស់ដែលអ្នកចង់ Scan
-        language: [ 'go', 'python', 'cpp', 'java-kotlin', 'javascript-typescript' ]
+        language: [ 'php', 'python', 'cpp', 'java-kotlin', 'javascript-typescript', 'cc++' ]
     steps:      
       - name: Checkout repository
         uses: actions/checkout@v4
 
       # Setup Go (បើមាន Go project)
-      - name: Set up Go
-        if: matrix.language == 'go'
+      - name: Set up php
+        if: matrix.language == 'php'
         uses: actions/setup-go@v5
         with:
           go-version: '>=1.21'   # ប្តូរទៅជា version ដែល project របស់អ្នកប្រើ (1.21+ ល្អជាង 1.0.13)
