@@ -8,7 +8,7 @@
     "region_name": "Phnom Penh",
     "district": "Chris.rathana",
     "zip_code": "12206",
-    "schema type="application/ld+json">
+    "schema type="application/ld+json/",
 }
 {
   "@context": "https://schema.org/",
