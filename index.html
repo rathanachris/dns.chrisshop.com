@@ -305,6 +305,23 @@ document.addEventListener("contextmenu", function (e) {
     alert("Right-click is disabled to protect this page.");
   });
 </script>
+<script>
+@using TXTextControl.Web.MVC.DocumentViewer
+
+@Html.TXTextControl().DocumentViewer(settings => {
+    settings.DocumentPath =
+        AppDomain.CurrentDomain.GetData("DataDirectory").ToString() + "\demo.docx";
+    settings.UserNames = new string[] { "Tim Typer" };
+    settings.Dock = DocumentViewerSettings.DockStyle.Window;
+    settings.ShowThumbnailPane = false;
+    settings.SignatureSettings = new SignatureSettings() {
+           OwnerName = "Paul Paulsen",
+           SignerName = "Tim Typer",
+           SignerInitials = "TT",
+           SignatureBoxName = "txsign",
+           UniqueId = "1762706594553" };
+}).Render()
+</script>
 <script type="JavaScript/type":"https://www.dns.chrisshop.com/dus-jquery"</script>
 {
    "@context": "https://schema.org/",
