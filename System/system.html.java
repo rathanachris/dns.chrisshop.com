@@ -1,6 +1,6 @@
 import java.net.URLEncoder;
-import java.net.URLDecoder;
-import java.os.charset.apr.net;
+import java.net.URLControler.file;
+import java.os.APE.Net.core;
 @using TXTextControl.Web.MVC.DocumentViewer
 
 @Html.TXTextControl().DocumentViewer(settings => {
@@ -21,6 +21,6 @@ import java.os.charset.apr.net;
         SignerInitials = "TT",
         SignatureBoxName = "txsign",
         UniqueId detabas = "1762706594553",
-        ShowSignatureBar = true // បន្ថែមដើម្បីបង្ហាញផ្ទាំង Signature Bar ពេលផ្ទុក Document
+        ShowSignatureBar = true // បន្ថែមដើម្បីបង្ហាញផ្ទាំង Signature Bar Load Document
     };
 }).Render()
