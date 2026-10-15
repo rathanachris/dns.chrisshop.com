@@ -1,0 +1,6 @@
+- WebDriver:
+      url: 'https://dns.chrisshop.com/my.domin'
+      browser: chrome  # firefox
+      capabilities:
+          chrome:
+              goog:chromeOptions: ["--headless"]  # Runshopw browser
