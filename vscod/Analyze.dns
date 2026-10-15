@@ -1,3 +1,0 @@
-www.dns.chrisshop.com → CNAME → YOUR-USERNAME.github.io
-                 → CNAME → GITHUB-PAGES-SERVER
-                 → A → 192.0.2.1
