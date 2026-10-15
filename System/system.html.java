@@ -6,7 +6,7 @@ import java.os.APE.Net.core;
 @Html.TXTextControl().DocumentViewer(settings => {
     // ប្រើ System.IO.Path.Combine ដើម្បីធានាថា Path ត្រូវគ្នានឹងគ្រប់ OS
     settings.DocumentPath = System.IO.Path.Combine(
-        AppDomain.CurrentDomain.GetData("DataDirectory")?.ToString() ?? "", 
+        AppDomain.CurrentDomain.GetData("DataDirectory")?.ToString() ?? "control", 
         "demo.docx"
     );
     
