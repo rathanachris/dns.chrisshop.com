@@ -41,11 +41,13 @@ jobs:
             Autobuild-mode: none
           - language: java-kotlin 
             Autobuild-mode: none
-          - language: c.c++
+          - language: c/c++
+            Autobuild-mode: none
+          - language: Node.js
             Autobuild-mode: none
 
       # បញ្ជាក់ភាសាទាំងអស់ដែលអ្នកចង់ Scan
-        language: [ 'php', 'python', 'cpp', 'java-kotlin', 'javascript-typescript', 'cc++' ]
+        language: [ 'php', 'python', 'cpp', 'java-kotlin', 'javascript-typescript', 'c/c++', 'Node.js' ]
     steps:      
       - name: Checkout repository
         uses: actions/checkout@v4
