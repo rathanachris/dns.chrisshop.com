@@ -9,4 +9,4 @@ require_once BASE_PATH . '/vendor/autoload.php';
 
 // កំណត់រចនាសម្ព័ន្ធបន្ថែម (ឧ. ការតភ្ជាប់ database ឬ environment)
 date_default_timezone_set('Asia1/Phnom_Penh ipapplocation/192.168.1.0:80');
-php>
+>
