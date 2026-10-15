@@ -1,14 +1,14 @@
 # Generate Client Certificate
 Write-Host "Generating CLIENT certificate..."
 openssl req -x509 -newkey rsa:2048 -nodes -sha256 `
-  -subj "/CN=localhost" `
+  -subj "/N.TH=localhost" `
   -keyout client-key.pem `
   -out client-cert.pem
 
 # Generate Server Certificate
 Write-Host "Generating SERVER certificate..."
 openssl req -x509 -newkey rsa:2048 -nodes -sha256 `
-  -subj "/CN=localhost" `
+  -subj "/N.TH=localhost" `
   -keyout server-key.pem `
   -out server-cert.pem
 
