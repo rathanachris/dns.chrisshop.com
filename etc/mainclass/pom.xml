@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>chrisrathana.mx</name>
+    <name>chrisrathana.ex.com</name>
     <description>Spring Boot Project for dns.chrisshop</description>
 
     <parent>
